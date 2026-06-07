@@ -1,4 +1,4 @@
-/* Blitz Cut n Core — site scripts */
+/* Blitz Concrete — site scripts */
 
 /* ── Scroll reveal ───────────────────────────────── */
 const revealNodes = document.querySelectorAll('.reveal');

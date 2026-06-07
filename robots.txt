@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /tools/
 
-Sitemap: https://blitzcutncore.com/sitemap.xml
+Sitemap: https://www.blitzconcrete.ie/sitemap.xml
