@@ -19,6 +19,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Public+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="assets/media/blitz-favicon.png">
+  <link rel="apple-touch-icon" href="assets/media/blitz-apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="service-pages.css">
 
   <script type="application/ld+json">
@@ -68,7 +70,7 @@
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="index.html" aria-label="Blitz Concrete home">
-        <img class="brand-logo" src="assets/media/blitzlogo.jpg" alt="Blitz Concrete" loading="eager" decoding="async">
+        <img class="brand-logo" src="assets/media/blitz-logo.png" width="480" height="388" alt="Blitz Concrete" loading="eager" decoding="async">
       </a>
       <nav class="desktop-nav" id="main-navigation" aria-label="Primary">
         <a href="index.html">Home</a>
@@ -98,7 +100,7 @@
 
   <main>
     <section class="hero">
-      <img src="assets/media/wall-chasing-01.jpg" alt="Clean wall chasing channels for electrical conduit — socket and spur positions marked, Munster" loading="eager" style="object-position: center center;">
+      <img src="assets/media/wall-chasing-01.jpg" width="960" height="1280" alt="Clean wall chasing channels for electrical conduit — socket and spur positions marked, Munster" loading="eager" style="object-position: center center;">
       <div class="container hero-content">
         <p class="eyebrow">Specialist Service</p>
         <h1>Wall Chasing</h1>
@@ -125,16 +127,16 @@
           </div>
         </article>
         <article class="card">
-          <img src="assets/media/wall-chasing-02.jpg" alt="Multiple parallel wall chasing channels cut in blockwork — Munster" loading="lazy" style="object-fit:cover; width:100%; aspect-ratio:4/5;">
+          <img src="assets/media/wall-chasing-02.jpg" width="960" height="1280" alt="Multiple parallel wall chasing channels cut in blockwork — Munster" loading="lazy" style="object-fit:cover; width:100%; aspect-ratio:4/5;">
         </article>
       </div>
 
       <div class="container gallery-grid reveal" style="margin-top:30px;">
-        <img src="assets/media/wall-chasing-01.jpg" alt="Wall chasing with socket and spur positions marked">
-        <img src="assets/media/wall-chasing-02.jpg" alt="Multiple channels cut for electrical first fix in blockwork">
+        <img class="gallery-thumb" src="assets/media/wall-chasing-01.jpg" width="960" height="1280" alt="Wall chasing with socket and spur positions marked">
+        <img class="gallery-thumb" src="assets/media/wall-chasing-02.jpg" width="960" height="1280" alt="Multiple channels cut for electrical first fix in blockwork">
         <picture>
           <source srcset="assets/media/blitz-wall-chasing-card.webp" type="image/webp">
-          <img src="assets/media/blitz-wall-chasing-card.jpg" alt="Wall saw mounted on concrete — Blitz Concrete">
+          <img class="gallery-thumb" src="assets/media/blitz-wall-chasing-card.jpg" width="1179" height="540" alt="Wall saw mounted on concrete — Blitz Concrete">
         </picture>
       </div>
 
@@ -179,7 +181,7 @@
     <div class="container footer-inner">
       <div class="footer-brand-col">
         <a class="footer-brand" href="index.html" aria-label="Blitz Concrete home">
-          <img src="assets/media/blitzlogo.jpg" alt="Blitz Concrete" loading="lazy" decoding="async">
+          <img src="assets/media/blitz-logo.png" width="480" height="388" alt="Blitz Concrete" loading="lazy" decoding="async">
         </a>
         <p class="footer-tagline">Precision Concrete Cutting &amp; Coring — Munster</p>
       </div>
@@ -212,6 +214,12 @@
     </svg>
     <span class="wa-label">WhatsApp Mike</span>
   </a>
+
+  <!-- Lightbox overlay (used by gallery pages) -->
+  <div id="lightbox-overlay" class="lightbox-overlay" role="dialog" aria-modal="true" aria-label="Photo lightbox">
+    <button class="lightbox-close" aria-label="Close">&#10005; Close</button>
+    <img class="lightbox-img" src="" alt="" loading="lazy">
+  </div>
 
   <script src="script.js" defer></script>
 </body>

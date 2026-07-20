@@ -19,6 +19,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Public+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="assets/media/blitz-favicon.png">
+  <link rel="apple-touch-icon" href="assets/media/blitz-apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="service-pages.css">
 
   <script type="application/ld+json">
@@ -68,7 +70,7 @@
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="index.html" aria-label="Blitz Concrete home">
-        <img class="brand-logo" src="assets/media/blitzlogo.jpg" alt="Blitz Concrete" loading="eager" decoding="async">
+        <img class="brand-logo" src="assets/media/blitz-logo.png" width="480" height="388" alt="Blitz Concrete" loading="eager" decoding="async">
       </a>
       <nav class="desktop-nav" id="main-navigation" aria-label="Primary">
         <a href="index.html">Home</a>
@@ -100,7 +102,7 @@
     <section class="hero">
       <picture>
         <source srcset="assets/media/blitz-coring-card.webp" type="image/webp">
-        <img src="assets/media/blitz-coring-card.jpg" alt="Stitch coring — large opening cut through exterior concrete wall, Doneraile" loading="eager">
+        <img src="assets/media/blitz-coring-card.jpg" width="426" height="1098" alt="Stitch coring — large opening cut through exterior concrete wall, Doneraile" loading="eager">
       </picture>
       <div class="container hero-content">
         <p class="eyebrow">Specialist Service</p>
@@ -130,7 +132,7 @@
         <article class="card">
           <picture>
             <source srcset="assets/media/blitz-job-0614.webp" type="image/webp">
-            <img src="assets/media/blitz-job-0614.jpg" alt="Stitch-cored opening in a thick exterior wall — Doneraile, Co. Cork" loading="lazy">
+            <img src="assets/media/blitz-job-0614.jpg" width="1066" height="1600" alt="Stitch-cored opening in a thick exterior wall — Doneraile, Co. Cork" loading="lazy">
           </picture>
         </article>
       </div>
@@ -138,18 +140,22 @@
       <div class="container gallery-grid reveal" style="margin-top:30px;">
         <picture>
           <source srcset="assets/media/blitz-coring-card.webp" type="image/webp">
-          <img src="assets/media/blitz-coring-card.jpg" alt="Serrated concrete face of a stitch-cored structural opening">
+          <img class="gallery-thumb" src="assets/media/blitz-coring-card.jpg" width="426" height="1098" alt="Serrated concrete face of a stitch-cored structural opening">
         </picture>
         <picture>
           <source srcset="assets/media/blitz-job-0615.webp" type="image/webp">
-          <img src="assets/media/blitz-job-0615.jpg" alt="Flat roof coring preparation — skylight opening project, Cork">
+          <img class="gallery-thumb" src="assets/media/blitz-job-0615.jpg" width="960" height="1600" alt="Flat roof coring preparation — skylight opening project, Cork">
         </picture>
         <picture>
           <source srcset="assets/media/blitz-job-0614.webp" type="image/webp">
-          <img src="assets/media/blitz-job-0614.jpg" alt="Full view of stitch-cored wall opening, Doneraile">
+          <img class="gallery-thumb" src="assets/media/blitz-job-0614.jpg" width="1066" height="1600" alt="Full view of stitch-cored wall opening, Doneraile">
         </picture>
-        <img src="assets/media/blitz-coring-manhole-01.jpg" alt="Rig-mounted diamond core drill boring through outdoor concrete slab for manhole access — water suppression active, operator in hi-vis" loading="lazy" decoding="async">
-        <img src="assets/media/blitz-coring-manhole-02.jpg" alt="Diamond core drilling through concrete slab — cored opening for drainage and manhole access on a residential civil site, Munster" loading="lazy" decoding="async">
+        <img class="gallery-thumb" src="assets/media/blitz-coring-manhole-01.jpg" width="1530" height="2040" alt="Rig-mounted diamond core drill boring through outdoor concrete slab for manhole access — water suppression active, operator in hi-vis" loading="lazy" decoding="async">
+        <img class="gallery-thumb" src="assets/media/blitz-coring-manhole-02.jpg" width="1530" height="2040" alt="Diamond core drilling through concrete slab — cored opening for drainage and manhole access on a residential civil site, Munster" loading="lazy" decoding="async">
+        <picture>
+          <source srcset="assets/media/blitz-hand-coring.webp" type="image/webp">
+          <img class="gallery-thumb" src="assets/media/blitz-hand-coring.jpg" width="800" height="1422" alt="Hand-held core drill set up on marked pipe penetration points through blockwork, sized in inches" loading="lazy" decoding="async">
+        </picture>
       </div>
 
       <div class="container" style="margin-top:30px;">
@@ -193,7 +199,7 @@
     <div class="container footer-inner">
       <div class="footer-brand-col">
         <a class="footer-brand" href="index.html" aria-label="Blitz Concrete home">
-          <img src="assets/media/blitzlogo.jpg" alt="Blitz Concrete" loading="lazy" decoding="async">
+          <img src="assets/media/blitz-logo.png" width="480" height="388" alt="Blitz Concrete" loading="lazy" decoding="async">
         </a>
         <p class="footer-tagline">Precision Concrete Cutting &amp; Coring — Munster</p>
       </div>
@@ -226,6 +232,12 @@
     </svg>
     <span class="wa-label">WhatsApp Mike</span>
   </a>
+
+  <!-- Lightbox overlay (used by gallery pages) -->
+  <div id="lightbox-overlay" class="lightbox-overlay" role="dialog" aria-modal="true" aria-label="Photo lightbox">
+    <button class="lightbox-close" aria-label="Close">&#10005; Close</button>
+    <img class="lightbox-img" src="" alt="" loading="lazy">
+  </div>
 
   <script src="script.js" defer></script>
 </body>

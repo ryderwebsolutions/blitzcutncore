@@ -1,0 +1,14 @@
+{
+  "name": "Blitz Concrete",
+  "short_name": "Blitz Concrete",
+  "description": "Precision concrete cutting and coring specialists, Munster.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#111827",
+  "theme_color": "#111827",
+  "icons": [
+    { "src": "/assets/media/blitz-icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/media/blitz-icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

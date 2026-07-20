@@ -57,11 +57,10 @@ img, video { max-width: 100%; display: block; }
 }
 
 .brand-logo {
-  width: clamp(60px, 8vw, 80px);
+  width: clamp(76px, 11vw, 104px);
   height: auto;
   display: block;
-  border-radius: 50%;
-  background: #fff;
+  border-radius: 8px;
 }
 
 .desktop-nav { display: flex; align-items: center; gap: 22px; }
@@ -423,7 +422,7 @@ p  { margin: 0; }
 
 .footer-brand-col { display: flex; flex-direction: column; gap: 10px; }
 .footer-brand { display: inline-flex; align-items: center; }
-.footer-brand img { width: clamp(56px, 7vw, 76px); height: auto; display: block; border-radius: 50%; background: #fff; }
+.footer-brand img { width: clamp(70px, 9vw, 96px); height: auto; display: block; border-radius: 8px; }
 .footer-tagline { font-size: 0.85rem; color: #8ea1b5; margin: 0; line-height: 1.45; }
 
 .footer-services-col,
@@ -477,6 +476,45 @@ p  { margin: 0; }
 }
 .whatsapp-float:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(37, 211, 102, 0.5); }
 .whatsapp-float svg { width: 22px; height: 22px; flex-shrink: 0; }
+
+/* ── Photo lightbox ───────────────────────────────── */
+.gallery-thumb { cursor: zoom-in; }
+
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 56px 20px;
+  background: rgba(9, 17, 30, 0.92);
+}
+.lightbox-overlay.open { display: flex; }
+.lightbox-img {
+  max-width: min(1100px, 100%);
+  max-height: 86vh;
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.5);
+}
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.lightbox-close:hover { background: rgba(255, 255, 255, 0.22); }
 
 /* ── Mobile header ────────────────────────────────── */
 .mobile-sticky { display: none; }
