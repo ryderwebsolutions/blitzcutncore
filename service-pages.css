@@ -6,7 +6,7 @@
   --slate-300: #b9c7d6;
   --white:  #ffffff;
   --blue:   #1a8cff;
-  --gold:   #f5a623;
+  --red:    #c81920;
   --radius-lg: 20px;
   --radius-md: 14px;
   --maxw: 1180px;
@@ -42,11 +42,11 @@ img, video { max-width: 100%; display: block; }
 .brand { display: inline-flex; align-items: center; text-decoration: none; color: var(--white); font-weight: 700; }
 
 .brand-logo {
-  width: clamp(60px, 8vw, 80px);
+  width: clamp(76px, 11vw, 104px);
   height: auto;
   display: block;
-  border-radius: 50%;
-  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(200, 25, 32, 0.35), 0 6px 16px rgba(0, 0, 0, 0.35);
 }
 
 .desktop-nav { display: flex; gap: 18px; }
@@ -130,7 +130,7 @@ img, video { max-width: 100%; display: block; }
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: var(--gold);
+  color: var(--red);
   font-size: 0.8rem;
   font-weight: 700;
 }
@@ -155,7 +155,10 @@ h2 { font-size: clamp(1.5rem, 2.8vw, 2.6rem); font-weight: 600; }
   overflow: hidden;
 }
 .card-body { padding: 18px; }
-.card video { width: 100%; aspect-ratio: 16 / 11; object-fit: cover; }
+.card video,
+.card img,
+.card picture img { width: 100%; height: auto; aspect-ratio: 16 / 11; object-fit: cover; }
+.card picture { display: block; }
 
 .bullets { list-style: none; padding: 0; margin: 16px 0 0; display: grid; gap: 10px; }
 .bullets li { position: relative; padding-left: 20px; }
@@ -165,6 +168,7 @@ h2 { font-size: clamp(1.5rem, 2.8vw, 2.6rem); font-weight: 600; }
 .gallery-grid img,
 .gallery-grid picture img {
   width: 100%;
+  height: auto;
   aspect-ratio: 16 / 11;
   object-fit: cover;
   object-position: center;
@@ -229,7 +233,7 @@ h2 { font-size: clamp(1.5rem, 2.8vw, 2.6rem); font-weight: 600; }
 
 .footer-brand-col { display: flex; flex-direction: column; gap: 10px; }
 .footer-brand { display: inline-flex; align-items: center; }
-.footer-brand img { width: clamp(56px, 7vw, 76px); height: auto; display: block; border-radius: 50%; background: #fff; }
+.footer-brand img { width: clamp(70px, 9vw, 96px); height: auto; display: block; border-radius: 8px; box-shadow: 0 0 0 1px rgba(200, 25, 32, 0.35), 0 6px 16px rgba(0, 0, 0, 0.35); }
 .footer-tagline { font-size: 0.85rem; color: #8ea1b5; margin: 0; line-height: 1.45; }
 
 .footer-services-col,
@@ -240,7 +244,7 @@ h2 { font-size: clamp(1.5rem, 2.8vw, 2.6rem); font-weight: 600; }
   font-size: 0.8rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--red);
   font-weight: 700;
   margin: 0 0 4px;
 }
