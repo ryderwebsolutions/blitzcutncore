@@ -244,6 +244,10 @@ p  { margin: 0; }
   background: #0f2138;
 }
 
+.media-card img,
+.media-card picture img { width: 100%; height: auto; display: block; }
+.media-card picture { display: block; }
+
 .media-card-photo img,
 .media-card-photo picture img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; display: block; }
 
@@ -403,6 +407,8 @@ p  { margin: 0; }
   box-shadow: var(--shadow-soft);
   display: grid;
   gap: 12px;
+  align-self: start;
+  align-content: start;
 }
 .contact-info-card h3 { font-size: 1.2rem; color: var(--navy-900); margin-bottom: 4px; }
 .contact-quick {
@@ -525,16 +531,16 @@ p  { margin: 0; }
 .mobile-header-actions { display: none; margin-left: auto; align-items: center; gap: 6px; }
 
 .mobile-icon-btn {
-  min-width: 46px; min-height: 44px; border-radius: 999px;
+  width: 44px; height: 44px; border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.28);
   background: rgba(255, 255, 255, 0.08);
-  color: #fff; text-decoration: none; font-weight: 700; font-size: 0.72rem;
-  display: inline-flex; align-items: center; justify-content: center; padding: 0 8px;
+  color: #fff; text-decoration: none;
+  display: inline-flex; align-items: center; justify-content: center; padding: 0;
 }
+.mobile-icon-btn svg { width: 20px; height: 20px; flex-shrink: 0; }
 .mobile-icon-btn.wa { background: #25D366; border-color: #25D366; }
 .mobile-menu-toggle { cursor: pointer; }
 .mobile-menu-toggle[aria-expanded="true"] { background: rgba(255, 255, 255, 0.2); }
-.mobile-icon-btn.menu { min-width: 54px; }
 .mobile-icon-btn:hover { background: rgba(255, 255, 255, 0.16); }
 .mobile-icon-btn.wa:hover { background: #1cb858; border-color: #1cb858; }
 

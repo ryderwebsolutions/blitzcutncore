@@ -329,15 +329,15 @@ h2 { font-size: clamp(1.5rem, 2.8vw, 2.6rem); font-weight: 600; }
 .mobile-sticky { display: none; }
 .mobile-header-actions { display: none; margin-left: auto; align-items: center; gap: 6px; }
 .mobile-icon-btn {
-  min-width: 46px; min-height: 44px; border-radius: 999px;
+  width: 44px; height: 44px; border-radius: 999px;
   border: 1px solid rgba(255,255,255,0.28); background: rgba(255,255,255,0.08);
-  color: #fff; text-decoration: none; font-weight: 700; font-size: 0.72rem;
-  display: inline-flex; align-items: center; justify-content: center; padding: 0 8px;
+  color: #fff; text-decoration: none;
+  display: inline-flex; align-items: center; justify-content: center; padding: 0;
 }
+.mobile-icon-btn svg { width: 20px; height: 20px; flex-shrink: 0; }
 .mobile-icon-btn.wa { background: #25D366; border-color: #25D366; }
 .mobile-menu-toggle { cursor: pointer; }
 .mobile-menu-toggle[aria-expanded="true"] { background: rgba(255,255,255,0.2); }
-.mobile-icon-btn.menu { min-width: 54px; }
 .mobile-icon-btn:hover { background: rgba(255,255,255,0.16); }
 .mobile-icon-btn.wa:hover { background: #1cb858; border-color: #1cb858; }
 
